@@ -1,0 +1,32 @@
+.campodetexto{
+  display: block;
+  width:50.9%;
+  height: 34px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-left: 8px;
+
+}
+
+.ccform-addon{
+      float:left;
+      padding:8px;
+      width:8%;
+      text-align:center;  
+  }
+
+  .ccbutton{
+  	display:block;
+  	border:none;
+  	background:#333333;
+  	color:#FFFFFF;
+  	padding:15px 35px;
+  	cursor:pointer;
+  	text-decoration:none;
+  	font-weight:bold;
+  }
