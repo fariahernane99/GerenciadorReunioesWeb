@@ -98,7 +98,7 @@
                 <div class="row">
                 <div class="col-xs-4 text-center"></div>
                   <div class="col-xs-4 text-center">
-                    <a href="#"> <i class="fa fa-edit"></i>        Editar informações</a>
+                    <a href="#"> <i class="fa fa-edit"> </i>Editar informações</a>
                   </div>
                 </div>
                 <!-- /.row -->

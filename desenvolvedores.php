@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>IFMG - Gerenciador de Reuniões | Visualizar Reuniões</title>
+        <title>IFMG - Gerenciador de Reuniões | Sobre</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
@@ -51,7 +51,7 @@
                 <nav class="navbar navbar-static-top" style="background: #008B00;">
                     <!-- Sidebar toggle button-->
                     <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-                        <SPAN style="margin-left: 15px;font-size: 15px;">Gerenciador de Reuniões | Visualizar Reuniões</SPAN>
+                        <SPAN style="margin-left: 15px;font-size: 15px;">Gerenciador de Reuniões | Desenvolvedores</SPAN>
                     </a>
 
                     <div class="navbar-custom-menu" style="background: #008B00;">
@@ -221,35 +221,30 @@
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
                 <section class="content-header">
-                    <center><h1>Reuniões agendadas</h1></center>
-                    <table border="1" class="table table-striped">
-                        <br>
-
-                        <thead>
-                            <tr>
-                                <th style="width: 20%"><center>Data</center></th>
-                        <th style="width: 20%"><center>Horário de Início</center></th>
-                        <th style="width: 30%;"><center>Local</center></th>
-                        <th style="width: 20%;"><center>Ponto de Pauta</center></th>
-                        <th style="width: 5%;"><center>Editar</center></th>
-                        <th style="width: 10%;"><center>Excluir</center></th>
-                        </tr>
-                        </thead>
-
-
-                        <tbody>
-
-                            <tr>
-                                <td><center></center></td>
-                        <td><center></center></td>
-                        <td><center></center></td>
-                        <td style="width: 10%;"><center><a class="btn btn-primary btn-block" style="padding:4px 1px;background: #666666;"><i class="fa fa-search"></i>&nbsp; Visualizar</a></center></td>
-                        <td><a class="btn btn-primary btn-block" style="padding:4px 1px;"><i class="fa fa-edit"></i></a></td>
-                        <td><a class="btn btn-danger btn-block" style="padding:4px 1px;"><i class="fa fa-remove"></i></a></td>
-                        </tr>
-
-                        </tbody>
-                    </table>
+                    <center><h1>Desenvolvedores</h1></center>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4" style="padding-left: 10%; padding-right: 10%; width: 50%">
+                            <div class="thumbnail">
+                                <center><h1>Desenvolvedor</h1></center>
+                                <img src="images/hernane.jpeg" alt="..." style="padding-left: 10%; padding-right: 10%;">
+                                <div class="caption">
+                                    <center><h4><b>Hernane Marcos de Faria Júnior</b></h4>
+                                    <h5>fariahernane99@gmail.com</h5></center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4" style="padding-left: 10%; padding-right: 10%; width: 50%">
+                            <div class="thumbnail">
+                                <center><h1>Desenvolvedor</h1></center>
+                                <img src="images/igor.jpeg" alt="..." style="padding-left: 10%; padding-right: 10%;">
+                                <div class="caption">
+                                    <center><h4><b>Igor Ribeiro da Silva</b></h4>
+                                    <h5>igorrs704@hotmail.com</h5></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section class="content">
                 </section>
