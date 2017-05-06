@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>IFMG - Gerenciador de Reuniões | Sobre</title>
+  <title>IFMG - Gerenciador de Reuniões | Cadastrar Reunião</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
@@ -51,7 +51,7 @@
     <nav class="navbar navbar-static-top" style="background: #006400;">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <SPAN style="margin-left: 15px;font-size: 15px;">Gerenciador de Reuniões | Sobre</SPAN>
+        <SPAN style="margin-left: 15px;font-size: 15px;">Gerenciador de Reuniões | Reuniões</SPAN>
       </a>
 
       <div class="navbar-custom-menu" style="background: #006400;">
@@ -200,29 +200,79 @@
 		<!-- Content Wrapper. Contains page content -->
 		<div class="content-wrapper">
 			<section class="content-header">
-								<center><h1>Sobre</h1></center>
-								<br><br>
-						<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-    <center><h3>Igor Ribeiro da Silva</h3></center>
-      <img src="images/fundo.png" alt="...">
-      <div class="caption">
-        <center><h3>Desenvolvedor</h3></center>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-    <center><h3>Hernane Marcos de Faria Júnior</h3></center>
-      <img src="images/mascote.jpg" alt="...">
-      <div class="caption">
-        <center><h3>Desenvolvedor</h3></center>
-      </div>
-    </div>
-  </div>
-</div>		 
-      
+				<div>
+					<ul class="nav nav-tabs">
+						<li role="presentation" class="active" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Cadastrar Reunião</a></li>
+						<li role="presentation"><a href="#servidores" aria-controls="profile" role="tab" data-toggle="tab">Reuniões Cadastradas</a></li>
+
+					</ul>
+
+					<!-- Nav tabs -->
+
+
+
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<br>
+
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="home">
+								<center><h1>Cadastrar Reunião</h1></center>
+								<br>
+								<span class="ccform-addon"><i class="fa fa-calendar fa-3x" title=""></i></span><label for="">Data da Reunião *</label>
+								<input type="date" class="campodetexto" placeholder="   Data da Reunião">
+								<br>
+								<span class="ccform-addon"><i class="fa fa-clock-o fa-3x" title=""></i></span><label for="">Horário de Início da Reunião *</label>
+								<input type="time" class="campodetexto" placeholder="   Horário de Início da Reunião">
+								<br>
+								<span class="ccform-addon"><i class="fa fa-clock-o fa-3x" title=""></i></span><label for="">Horário de Término da Reunião</label>
+								<input type="time" class="campodetexto" placeholder="   Horário de Término da Reunião">
+								<br>
+								<span class="ccform-addon"><i class="fa fa-building fa-3x" title=""></i></span><label for="">Local da Reunião *</label>
+								<input type="password" class="campodetexto" placeholder="   Local da Reunião">
+								<br>
+								<span class="ccform-addon"><i class="fa fa-bookmark-o fa-3x" title=""></i></span><label for="">Grupo Participante *</label>
+								<br>
+								<select id="name" name="Grupos" class="selectpicker show-menu-arrow">
+									<option value="{{ $ite->iteCodigo }}" selected> Grupo 1</option>
+									<option value="{{ $ite->iteCodigo }}"> Grupo 2</option>
+									<option value="{{ $ite->iteCodigo }}"> Grupo 3</option>
+								</select> 
+								<br><br><br><br>
+								<button class="ccbutton fa fa-check" style="margin-left: 18em;">     Confirmar Cadastro</button>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="servidores">
+								<table border="1" class="table table-striped">
+									<br>
+
+									<thead>
+										<tr>
+											<th style="width: 20%"><center>Data</center></th>
+											<th style="width: 20%"><center>Horário de Início</center></th>
+											<th style="width: 30%;"><center>Local</center></th>
+											<th style="width: 10%;"><center>Editar</center></th>
+											<th style="width: 10%;"><center>Excluir</center></th>
+										</tr>
+									</thead>
+
+
+									<tbody>
+
+										<tr>
+											<td><center></center></td>
+											<td><center></center></td>
+											<td><center></center></td>
+											<td><a class="btn btn-primary btn-block" style="padding:4px 1px;"><i class="fa fa-edit"></i></a></td>
+											<td><a class="btn btn-danger btn-block" style="padding:4px 1px;"><i class="fa fa-remove"></i></a></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 			<section class="content">
 			</section>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>IFMG - Gerenciador de Reuniões | Sobre</title>
+  <title>IFMG - Gerenciador de Reuniões | Visualizar Reuniões</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
@@ -51,7 +51,7 @@
     <nav class="navbar navbar-static-top" style="background: #006400;">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <SPAN style="margin-left: 15px;font-size: 15px;">Gerenciador de Reuniões | Sobre</SPAN>
+        <SPAN style="margin-left: 15px;font-size: 15px;">Gerenciador de Reuniões | Visualizar Reuniões</SPAN>
       </a>
 
       <div class="navbar-custom-menu" style="background: #006400;">
@@ -186,7 +186,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="administradores.php"><i class="fa fa-user"></i> Administradores do Site</a></li>
+          	<li><a href="administradores.php"><i class="fa fa-user"></i> Administradores do Site</a></li>
             <li><a href="desenvolvedores.php"><i class="fa fa-users"></i> Desenvolvedores</a></li>
             <li><a href="http://www.formiga.ifmg.edu.br/" target="_blank"><i class="fa fa-bank"></i> IFMG</a></li>
             <li><a href="sobre.php"><i class="fa fa-info"></i> Sobre</a></li>
@@ -200,29 +200,35 @@
 		<!-- Content Wrapper. Contains page content -->
 		<div class="content-wrapper">
 			<section class="content-header">
-								<center><h1>Sobre</h1></center>
-								<br><br>
-						<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-    <center><h3>Igor Ribeiro da Silva</h3></center>
-      <img src="images/fundo.png" alt="...">
-      <div class="caption">
-        <center><h3>Desenvolvedor</h3></center>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-    <center><h3>Hernane Marcos de Faria Júnior</h3></center>
-      <img src="images/mascote.jpg" alt="...">
-      <div class="caption">
-        <center><h3>Desenvolvedor</h3></center>
-      </div>
-    </div>
-  </div>
-</div>		 
-      
+				<center><h1>Reuniões agendadas</h1></center>
+				<table border="1" class="table table-striped">
+									<br>
+
+									<thead>
+										<tr>
+										<th style="width: 20%"><center>Data</center></th>
+										<th style="width: 20%"><center>Horário de Início</center></th>
+										<th style="width: 30%;"><center>Local</center></th>
+										<th style="width: 20%;"><center>Ponto de Pauta</center></th>
+										<th style="width: 5%;"><center>Editar</center></th>
+										<th style="width: 10%;"><center>Excluir</center></th>
+										</tr>
+									</thead>
+
+
+									<tbody>
+
+										<tr>
+											<td><center></center></td>
+											<td><center></center></td>
+											<td><center></center></td>
+											<td style="width: 10%;"><center><a class="btn btn-primary btn-block" style="padding:4px 1px;background: #666666;"><i class="fa fa-search"></i>&nbsp; Visualizar</a></center></td>
+											<td><a class="btn btn-primary btn-block" style="padding:4px 1px;"><i class="fa fa-edit"></i></a></td>
+											<td><a class="btn btn-danger btn-block" style="padding:4px 1px;"><i class="fa fa-remove"></i></a></td>
+										</tr>
+
+									</tbody>
+								</table>
 			</section>
 			<section class="content">
 			</section>

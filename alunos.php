@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>IFMG - Gerenciador de Reuniões | Sobre</title>
+  <title>IFMG - Gerenciador de Reuniões | Alunos</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
@@ -51,7 +51,7 @@
     <nav class="navbar navbar-static-top" style="background: #006400;">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <SPAN style="margin-left: 15px;font-size: 15px;">Gerenciador de Reuniões | Sobre</SPAN>
+        <SPAN style="margin-left: 15px;font-size: 15px;">Gerenciador de Reuniões | Alunos</SPAN>
       </a>
 
       <div class="navbar-custom-menu" style="background: #006400;">
@@ -200,29 +200,70 @@
 		<!-- Content Wrapper. Contains page content -->
 		<div class="content-wrapper">
 			<section class="content-header">
-								<center><h1>Sobre</h1></center>
-								<br><br>
-						<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-    <center><h3>Igor Ribeiro da Silva</h3></center>
-      <img src="images/fundo.png" alt="...">
-      <div class="caption">
-        <center><h3>Desenvolvedor</h3></center>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-    <center><h3>Hernane Marcos de Faria Júnior</h3></center>
-      <img src="images/mascote.jpg" alt="...">
-      <div class="caption">
-        <center><h3>Desenvolvedor</h3></center>
-      </div>
-    </div>
-  </div>
-</div>		 
-      
+				<div>
+					<ul class="nav nav-tabs">
+						<li role="presentation" class="active" ><a href="#cadastrarAluno" aria-controls="home" role="tab" data-toggle="tab">Cadastrar Aluno</a></li>
+						<li role="presentation"><a href="#alunosCadastrados" aria-controls="profile" role="tab" data-toggle="tab">Alunos Cadastrados</a></li>
+
+					</ul>
+
+					<!-- Nav tabs -->
+
+
+
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<br>
+
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="cadastrarAluno">
+								<center><h1>Cadastrar Aluno</h1></center>
+								<br>
+								<span class="ccform-addon"><i class="fa fa-clock-o fa-3x" title=""></i></span><label for="">Matrícula do Aluno *</label>
+								<input type="number" class="campodetexto" placeholder="   Matrícula do Aluno">
+								<br>
+								<span class="ccform-addon"><i class="fa fa-bold fa-3x" title=""></i></span><label for="">Nome do Aluno *</label>
+								<input type="text" class="campodetexto" placeholder="   Nome do Aluno">
+								<br>
+								<span class="ccform-addon"><i class="fa fa-envelope fa-3x" title=""></i></span><label for="">Email do Aluno *</label>
+								<input type="email" class="campodetexto" placeholder="   Email do Aluno">
+								<br>
+								<br><br><br><br>
+								<button class="ccbutton fa fa-check" style="margin-left: 18em;">     Confirmar Cadastro</button>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="alunosCadastrados">
+								<center><h1>Alunos Cadastrados</h1></center>
+								<table border="1" class="table table-striped">
+									<br>
+
+									<thead>
+										<tr>
+											<th style="width: 10%"><center>Matrícula</center></th>
+											<th style="width: 30%"><center>Nome</center></th>
+											<th style="width: 30%;"><center>Email</center></th>
+											<th style="width: 10%;"><center>Editar</center></th>
+											<th style="width: 10%;"><center>Excluir</center></th>
+										</tr>
+									</thead>
+
+
+									<tbody>
+
+										<tr>
+											<td><center>0015119</center></td>
+											<td><center>Hernane Marcos de Faria Júnior</center></td>
+											<td><center>fariahernane99@gmail.com</center></td>
+											<td><a class="btn btn-primary btn-block" style="padding:4px 1px;"><i class="fa fa-edit"></i></a></td>
+											<td><a class="btn btn-danger btn-block" style="padding:4px 1px;"><i class="fa fa-remove"></i></a></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 			<section class="content">
 			</section>

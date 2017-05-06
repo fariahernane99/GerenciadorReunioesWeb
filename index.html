@@ -6,6 +6,7 @@
   <title>IFMG - Gerenciador de Reuniões | Principal</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
@@ -19,6 +20,7 @@
   <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
   <!-- iCheck -->
   <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- Morris chart -->
   <link rel="stylesheet" href="plugins/morris/morris.css">
   <!-- jvectormap -->
@@ -43,16 +45,16 @@
   <header class="main-header">
     <!-- Logo -->
     <a href="index2.html" class="logo" style="background: #008B00;">
-        <span><img src="images/if.png" height="40px" width="30px" alt="Mini Image"></span>
+        <span><img src="images/if.png" style = "margin-left: -5px;" height="40px" width="30px" alt="Mini Image"></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top" style="background: #006400;">
+    <nav class="navbar navbar-static-top" style="background: #008B00;">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <SPAN style="margin-left: 15px;font-size: 15px;">Gerenciador de Reuniões</SPAN>
+        <SPAN style="margin-left: 15px;font-size: 15px;">Gerenciador de Reuniões | Principal</SPAN>
       </a>
 
-      <div class="navbar-custom-menu" style="background: #006400;">
+      <div class="navbar-custom-menu" style="background: #008B00;">
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
           <!-- Notifications: style can be found in dropdown.less -->
@@ -84,7 +86,7 @@
             </a>
             <ul class="dropdown-menu" >
               <!-- User image -->
-              <li class="user-header" style="background: #008B00;">
+              <li class="user-header" style="background: #006400;">
                 <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
@@ -96,18 +98,17 @@
               <li class="user-body">
                 <div class="row">
                 <div class="col-xs-4 text-center"></div>
-                  <div class="col-xs-4 text-center">
-                    <a href="#"> <i class="fa fa-edit"></i>        Editar informações</a>
+                  <div class="col-xs-12 text-center">
+                    <a href="#"> <i class="fa fa-edit"></i>Editar Informações</a>
                   </div>
                 </div>
                 <!-- /.row -->
               </li>
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-right">
-                <a href="#" class="btn btn-default btn-flat" style="border-radius: 5px;width: 8em;background: #FF0000;color: white;"><i class="fa fa-sign-out"></i>        Sair</a>
+              
+                <div>
+                <center><a href="#" class="btn btn-default btn-flat" style="border-radius: 5px;width: 8em;background: #FF0000;color: white; margin-bottom: 10px;"><i class="fa fa-sign-out"></i>Sair</a></center>
                 </div>
-              </li>
+              
             </ul>
           </li>
         </ul>
@@ -115,7 +116,7 @@
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
+  <aside class="main-sidebar" >
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
@@ -130,66 +131,64 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
-        <li class="header">CADASTROS</li>
+
+      <!-- Grupo de Menu - Cadastros -->
+        <li class="header">Cadastros</li>
+
+        <!-- Item de Menu - Pessoas -->
+        <li class="treeview">
+          <a href="#">
+          <i class="fa fa-user"></i>
+            <span>Pessoas</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+          	<li><a href="alunos.php"><i class="fa fa-user"></i> Alunos</a></li>
+            <li><a href="servidores.php"><i class="fa fa-user"></i> Servidores</a></li>            
+          </ul>
+        </li>
+        <!-- Item de Menu - Outros -->
         <li class="treeview">
           <a href="#">
             <i class="fa fa-plus"></i>
-            <span>Cadastros gerais</span>
+            <span>Outros</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/layout/top-nav.html"><i class="fa fa-user"></i> Servidor Comum</a></li>
-            <li><a href="pages/layout/boxed.html"><i class="fa fa-user"></i> Funcionário DE</a></li>
-            <li><a href="pages/layout/fixed.html"><i class="fa fa-user"></i> Coordenador</a></li>
-            <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-user"></i> Aluno</a></li>
+            <li><a href="grupos.php"><i class="fa fa-plus"></i> Grupos</a></li>
+            <li><a href="reunioes.php"><i class="fa fa-plus"></i> Reuniões</a></li>
           </ul>
         </li>
-        <li class="header">Reuniões</li>
+
+        <!-- Grupo de Menu - Visualizar -->
+        <li class="header">Visualizar</li>
+        <li><a href="visualizarAtas.php"><i class="fa fa-search"></i> Atas</a></li>
+        <li><a href="visualizarReunioes.php"><i class="fa fa-plus"></i> Reuniões</a></li>
+
+        <!-- Grupo de Menu - Atas -->
+        <li class="header">Atas</li>
+        <li><a href="redigirAta.php"><i class="fa fa-pencil"></i> Redigir Ata</a></li>
+        <li><a href="revisarAta.php"><i class="fa fa-edit"></i> Revisar Ata</a></li>
+        <li><a href="mudarStatusAta.php"><i class="fa fa-check-square-o"></i> Mudar Status da Ata</a></li>
+
+        <!-- Grupo de Menu - Mais -->
+        <li class="header">Mais</li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-users"></i>
-            <span>Reunião</span>
+            <i class="fa fa-bars"></i> <span>Informações</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/UI/general.html"><i class="fa fa-plus"></i> Cadastrar Reunião</a></li>
-            <li><a href="pages/UI/icons.html"><i class="fa fa-search"></i> Vizualizar Reuniões agendadas</a></li>
-            <li><a href="pages/UI/buttons.html"><i class="fa fa-edit"></i> Editar reunião</a></li>
-            <li><a href="pages/UI/sliders.html"><i class="fa fa-remove"></i> Excluir uma reunião</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>ATAS</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="pages/forms/general.html"><i class="fa fa-pencil"></i> Redigir ATA</a></li>
-            <li><a href="pages/forms/advanced.html"><i class="fa fa-edit"></i> Revisar ATA</a></li>
-            <li><a href="pages/forms/editors.html"><i class="fa fa-check-square-o"></i> Concluir ATA</a></li>
-            <li><a href="pages/forms/editors.html"><i class="fa fa-bookmark-o"></i> Fechar ATA</a></li>
-            <li><a href="pages/forms/editors.html"><i class="fa fa-archive"></i> Finalizar ATA</a></li>
-          </ul>
-        </li>
-        <li class="header">Informações</li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-bars"></i> <span>Acesso</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="pages/forms/general.html"><i class="fa fa-users"></i> Desenvolvedores</a></li>
-            <li><a href="pages/forms/advanced.html"><i class="fa fa-bank"></i> IFMG</a></li>
-            <li><a href="pages/forms/editors.html"><i class="fa fa-user"></i> Administrador do site</a></li>
-            <li><a href="pages/forms/general.html"><i class="fa fa-info"></i> Sobre</a></li>
+            <li><a href="administradores.php"><i class="fa fa-user"></i> Administradores do Site</a></li>
+            <li><a href="desenvolvedores.php"><i class="fa fa-users"></i> Desenvolvedores</a></li>
+            <li><a href="http://www.formiga.ifmg.edu.br/" target="_blank"><i class="fa fa-bank"></i> IFMG</a></li>
+            <li><a href="sobre.php"><i class="fa fa-info"></i> Sobre</a></li>
           </ul>
         </li>
       </ul>
